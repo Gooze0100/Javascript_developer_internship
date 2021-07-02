@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
+* {
+  /* Reset browser's padding and margin */
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background-color: #132967;
+  padding: 10px;
+  position: relative;
+}
+
+header .error {
+  color: crimson;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: .3s all ease-in-out;
+  transition: .3s all ease-in-out;
+}
+
+header .form {
+  width: 300px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .form .search-field {
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+}
+
+header .form .search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+}
+
+header .form .search-button img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+}
+
+.container p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*# sourceMappingURL=custom.css.map */
