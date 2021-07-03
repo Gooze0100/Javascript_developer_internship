@@ -15,15 +15,22 @@ input.addEventListener('input', (e) => {
     }
 });
 
-let count = 5;
+let count = 0;
+let notCreated = true;
 
 // Button to search============================================
 button.addEventListener('click', (event) => {
     // make a flag for this or to use refresh
-    // window.location.reload();
-    event.preventDefault();
-    // event.stopPropagation();
-    // event.stopImmediatePropagation();
+    // event.preventDefault();
+    if (notCreated === true) {
+        event.preventDefault();
+        notCreated = false;
+    } else {
+        // location.reload();
+        event.reload();
+        event.preventDefault();
+    }
+
     // console.log(input.value);
     // console.log(count);
         
@@ -92,6 +99,5 @@ button.addEventListener('click', (event) => {
     if (input.value !== '') {
         localStorage.setItem(input.value, input.value);
     }
-    event.cancelable;
-})
+});
 
