@@ -12,6 +12,7 @@ input.addEventListener('input', (e) => {
         button.setAttribute('disabled', '');
     } else {
         error.innerText = '';
+        button.removeAttribute('disabled');
     }
 });
 
